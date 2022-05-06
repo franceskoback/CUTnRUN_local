@@ -4,12 +4,18 @@
 This repo will contain the code needed to run the CUT&RUN pipeline. Currently in development.
 
 For all of these steps, you will need to run the python script for the step, and then run the associated bash script that python script generates before moving onto the next step in the pipeline.
+### Software Requirements:###
+1. [Bwa](https://github.com/lh3/bwa) follow the instructions in that link to download bwa and make your reference index-- if you already have a .fa reference genome you can use, great! Find the path to that data. If not, you can download one doing something like this, for example to get the mm10.fa genome: wget http://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/mm10.fa.gz but make sure it's the right one that matches your data! 
+2. Once you have bwa downloaded and have a working genome .fa, you'll need to run the following command: **bwa index /path/to/genome.fa
+3. 
 
 To start with fastqs, use scripts 1 and 2. If you already have sorted bedgraphs, skip to the "STARTING FROM 3:" Portion below. Else 
-1. Run python script one
-2. On first run, you'll need to make a bwa index, so you'll need to install the bwa software:
-3. Once you have bwa downloaded (typing bwa in command window returns bwa help page) run the following command: **bwa index /wynton/group/gladstone/users/franceskoback/Projects/CUTnRUN/data/index/mm10.fa (where mm10.fa is the reference genome you have downloaded. See below step 23 to see an example of how to download this) **
-4. 
+### on FIRST GO: ### 
+1. Git clone this repository 
+2. make results and data directories within this folder (mkdir results, mkdir data)
+3. copy your paired fastq data into this repository (..R1_001.fastq.gz and R2_001.fastq.gz or something similar) or cp -r /path/to/data ./data within this repo folder)
+5. Run python script one following the format in the "Usage example" portion of the readme below. This will output a bash script that you will then run to do the first step in this pipeline. 
+8. 
 
 
 These are run on each set of paired fastqs until you get a list of sorted bedgraphs, then proceed with the steps below.
