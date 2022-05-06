@@ -5,7 +5,7 @@ This repo will contain the code needed to run the CUT&RUN pipeline. Currently in
 
 For all of these steps, you will need to run the python script for the step, and then run the associated bash script that python script generates before moving onto the next step in the pipeline.
 ### Software Requirements: ###
-1. [Bwa](https://github.com/lh3/bwa) follow the instructions in that link to download bwa and make your reference index-- if you already have a .fa reference genome you can use, great! Find the path to that data. If not, you can download one doing something like this, for example to get the mm10.fa genome: wget http://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/mm10.fa.gz but make sure it's the right one that matches your data! 
+1. ## [Bwa](https://github.com/lh3/bwa) ## follow the instructions in that link to download bwa and make your reference index-- if you already have a .fa reference genome you can use, great! Find the path to that data. If not, you can download one doing something like this, for example to get the mm10.fa genome: wget http://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/mm10.fa.gz but make sure it's the right one that matches your data! 
 2. Once you have bwa downloaded and have a working genome .fa, you'll need to run the following command: **bwa index /path/to/genome.fa
 3. 
 
