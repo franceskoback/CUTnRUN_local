@@ -10,6 +10,8 @@ For all of these steps, you will need to run the python script for the step, and
 3. [samtools](http://www.htslib.org/download/) 
 4. deeptools:  conda install -c bioconda deeptools
 5. bamtools: conda install -c bioconda bamtools ** for these, make sure your conda folder is in your path, ie export PATH="/your/path/to/miniconda3:$PATH"
+6. trim_galore 
+7. bowtie2
 
 To start with fastqs, use scripts 1 and 2. If you already have sorted bedgraphs, skip to the "STARTING FROM 3:" Portion below. Else 
 ### on FIRST GO: ### 
