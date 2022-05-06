@@ -1,4 +1,4 @@
-# CUTnRUN
+# CUTnRUN Local Version
 ## Bioinformatics Pipeline For CUT&RUN Analysis
 
 This repo will contain the code needed to run the CUT&RUN pipeline. Currently in development.
@@ -7,8 +7,9 @@ For all of these steps, you will need to run the python script for the step, and
 
 To start with fastqs, use scripts 1 and 2. If you already have sorted bedgraphs, skip to the "STARTING FROM 3:" Portion below. Else 
 1. Run python script one
-2. On first run, you'll need to make a bwa index, so do module load CBI bwa then do  bwa index /wynton/group/gladstone/users/franceskoback/Projects/CUTnRUN/data/index/mm10.fa (where mm10.fa is the reference genome you have downloaded. See below step 23 to see an example of how to download this) 
-3. 
+2. On first run, you'll need to make a bwa index, so you'll need to install the bwa software:
+3. Once you have bwa downloaded (typing bwa in command window returns bwa help page) run the following command: **bwa index /wynton/group/gladstone/users/franceskoback/Projects/CUTnRUN/data/index/mm10.fa (where mm10.fa is the reference genome you have downloaded. See below step 23 to see an example of how to download this) **
+4. 
 
 
 These are run on each set of paired fastqs until you get a list of sorted bedgraphs, then proceed with the steps below.
