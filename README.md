@@ -9,11 +9,9 @@ For all of these steps, you will need to run the python script for the step, and
 1. [TrimGalore](https://github.com/FelixKrueger/TrimGalore) wrapper to apply adapter and quality trimming to fastq files. 
 2. [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml) for aligning. Other pipelines use BWA & Stampy, but Bowtie2 seems to perform better and require fewer software tools to implement. 
 3. [samtools](http://www.htslib.org/download/) 
-4. [bamtools](https://github.com/pezmaster31/bamtools) install with **conda install -c bioconda bamtools** 
-6. [Bwa](https://github.com/lh3/bwa) follow the instructions in that link to download bwa and make your reference index-- if you already have a .fa reference genome you can use, great! Find the path to that data. If not, you can download one doing something like this, for example to get the mm10.fa genome: wget http://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/mm10.fa.gz but make sure it's the right one that matches your data! 
-7. Once you have bwa downloaded and have a working genome .fa, you'll need to run the following command: **bwa index /path/to/genome.fa
-8. deeptools:  conda install -c bioconda deeptools
-9. bamtools: conda install -c bioconda bamtools ** for these, make sure your conda folder is in your path, ie export PATH="/your/path/to/miniconda3:$PATH"
+4. [bamtools](https://github.com/pezmaster31/bamtools) install with **conda install -c bioconda bamtools** **for these, make sure your conda folder is in your path, ie export PATH="/your/path/to/miniconda3:$PATH"**
+5. [deeptools](https://deeptools.readthedocs.io/en/develop/) **conda install -c conda-forge -c bioconda deeptools** 
+6. [Bwa](https://github.com/lh3/bwa) follow the instructions in that link to download bwa and make your reference index by running the following command: **bwa index /path/to/genome.fa**
 
 
 To start with fastqs, use scripts 1 and 2. If you already have sorted bedgraphs, skip to the "STARTING FROM 3:" Portion below. Else 
