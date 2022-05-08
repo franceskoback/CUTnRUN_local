@@ -8,7 +8,7 @@ For all of these steps, you will need to run the python script for the step, and
 ### Software Requirements: ###
 1. [TrimGalore](https://github.com/FelixKrueger/TrimGalore) wrapper to apply adapter and quality trimming to fastq files. 
 2. [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml) for aligning. Other pipelines use BWA & Stampy, but Bowtie2 seems to perform better and require fewer software tools to implement. 
-3. [samtools](http://www.htslib.org/download/) 
+3. [samtools](http://www.htslib.org/download/)
 4. [bamtools](https://github.com/pezmaster31/bamtools) install with **conda install -c bioconda bamtools** **for these, make sure your conda folder is in your path, ie export PATH="/your/path/to/miniconda3:$PATH"**
 5. [deeptools](https://deeptools.readthedocs.io/en/develop/) **conda install -c conda-forge -c bioconda deeptools** 
 6. [Bwa](https://github.com/lh3/bwa) follow the instructions in that link to download bwa and make your reference index by running the following command: **bwa index /path/to/genome.fa**
