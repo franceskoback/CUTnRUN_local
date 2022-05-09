@@ -87,7 +87,7 @@ else:
 # Move to the folder with the saved bam and stats files
 os.chdir( bamToBed_folder )
 # write the file of the mapped reads and normalization factors for future reference
-reads_norm_factor_file = open('999_mapped_num_reads_per_file_norm_factor.txt', 'w')
+reads_norm_factor_file = open('mapped_num_reads_per_file_norm_factor.txt', 'w')
 reads_norm_factor_file.write(tabulate(mapped_stats_files))
 reads_norm_factor_file.write(tabulate(mapped_reads_per_file))
 reads_norm_factor_file.close()
