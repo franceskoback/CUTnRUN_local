@@ -49,7 +49,19 @@ os.chdir( output_folder )
 # save commands to the output script
 script_name = "four_moveplots.sh"
 output_script = open( script_name, 'w' )
-command= "cd " + normalized_beds_folder
+command= "cd " + normalized_beds_folder + "/stringent"
+output_script.write(command)
+output_script.write("\n")
+
+command= "mv *.txt " + output_folder
+output_script.write(command)
+output_script.write("\n")
+
+command= "mv *.png " + output_folder
+output_script.write(command)
+output_script.write("\n")
+
+command= "cd " + normalized_beds_folder + "/relaxed"
 output_script.write(command)
 output_script.write("\n")
 
