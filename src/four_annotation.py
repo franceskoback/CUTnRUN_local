@@ -53,11 +53,11 @@ command= "cd " + normalized_beds_folder
 output_script.write(command)
 output_script.write("\n")
 
-commnand= "mv *.txt " + output_folder
+command= "mv *.txt " + output_folder
 output_script.write(command)
 output_script.write("\n")
 
-commnand= "mv *.png " + output_folder
+command= "mv *.png " + output_folder
 output_script.write(command)
 output_script.write("\n")
 
