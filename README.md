@@ -1,7 +1,7 @@
 # CUTnRUN Pipeline
 ## Bioinformatics Pipeline For CUT&RUN Analysis
 
-This repo will contain the code needed to run the CUT&RUN pipeline. 
+This repo will contain the code needed to run the CUT&RUN (cleavage under targets and release using nuclease) pipeline, a more efficient alternative to the standard ChIP-Seq method. 
 
 For all of these steps, you will need to run the python script for the step, and then run the associated bash script that python script generates before moving onto the next step in the pipeline.
 ### Software Requirements: ###
